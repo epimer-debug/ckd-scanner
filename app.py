@@ -131,4 +131,6 @@ if uploaded_file:
                 c4.metric("鉀", f"{nut.get('potassium') or '未標示'} mg")
                 c5.metric("磷", f"{nut.get('phosphorus') or '未標示'} mg")
             else:
+
                 st.error("分析失敗，可能是圖片模糊或 AI 無法讀取，請換一張試試看。")
+                
